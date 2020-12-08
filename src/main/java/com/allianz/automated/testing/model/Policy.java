@@ -7,7 +7,6 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.UUID;
 
 @Entity
 @NoArgsConstructor
@@ -22,7 +21,7 @@ public class Policy {
     private String restOfThings;
 
     public Policy(Policy other) {
-        this.id = UUID.randomUUID().toString();
+        this.id = other.id;
         this.operationNumber = other.operationNumber;
         this.restOfThings = other.restOfThings;
     }

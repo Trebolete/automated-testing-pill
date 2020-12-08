@@ -9,7 +9,6 @@ import com.allianz.automated.testing.model.exception.SavePolicyException;
 import com.allianz.automated.testing.repository.PolicyRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.util.Optional;
 
@@ -27,9 +26,10 @@ class PolicyServiceTest {
 
     @BeforeEach
     void setUp() {
-        policyRepository = Mockito.mock(PolicyRepository.class);
-        policyWrapper = Mockito.mock(PolicyWrapper.class);
-        policyValidationService = Mockito.mock(PolicyValidationService.class);
+        policyRepository = mock(PolicyRepository.class);
+        policyWrapper = mock(PolicyWrapper.class);
+        policyValidationService = mock(PolicyValidationService.class);
+
         systemUnderTest = new PolicyService(policyRepository, policyWrapper, policyValidationService);
     }
 
