@@ -1,0 +1,10 @@
+1 - Why? -> Avoid bugs -  We should add at least one unit test per reported defect.
+2 - Testing Pyramid -> Price means development/maintenance/execution time - Quantities: 80% 15% 5% - Sporadic manual testing.
+3 - Methodologies:
+    3.1 - Black/White box
+    3.2 - TDD (red - green - refactor)
+    3.3 - BDD y Gherkins (Given X When X Then X, As X I want X So X)
+4 - Test quality measurement:
+    4.1 - Coverage -> Do not ensure quality.
+    4.2 - Mutation testing -> Too much effort.
+    4.3 - Historical bug reduction.
