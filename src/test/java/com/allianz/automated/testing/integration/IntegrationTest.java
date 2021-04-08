@@ -3,6 +3,7 @@ package com.allianz.automated.testing.integration;
 import com.allianz.automated.testing.AutomatedTestingApplication;
 import com.allianz.automated.testing.Fixtures;
 import com.allianz.automated.testing.external.http.PolicyValidationService;
+import com.allianz.automated.testing.external.mainframe.PolicyWrapper;
 import com.allianz.automated.testing.model.Policy;
 import com.allianz.automated.testing.repository.PolicyRepository;
 import org.junit.jupiter.api.Test;
@@ -32,6 +33,9 @@ class IntegrationTest {
 
     @MockBean
     private PolicyValidationService policyValidationService;
+
+    @MockBean
+    private PolicyWrapper policyWrapper;
 
     @Autowired
     private TestRestTemplate restTemplate;
